@@ -188,7 +188,7 @@ define build-libart-compiler
   ifeq ($$(art_ndebug_or_debug),ndebug)
     LOCAL_MODULE := libart-compiler
     LOCAL_SHARED_LIBRARIES += libart
-    LOCAL_FDO_SUPPORT := true
+#    LOCAL_FDO_SUPPORT := true
   else # debug
     LOCAL_MODULE := libartd-compiler
     LOCAL_SHARED_LIBRARIES += libartd
